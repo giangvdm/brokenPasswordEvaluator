@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Broken Password Evaluator</title>
+    <!-- Load custom CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body>
+    <h1>Password Evaluator</h1>
+    <h2>Developed by
+        <a href="https://github.com/giangvdm15" target="_blank" title="giangvdm on Github">giangvdm</a>
+    </h2>
+    <br>
+    <form action="" id="main-form">
+        <fieldset>
+            <legend>Type in your password, then press "Submit" to evaluate your password's strength</legend>
+            <input name="" id="password-input" type="password">
+            <input type="button" id="password-submit" value="Submit">
+            <input type="reset">
+            <span id="no-password-alert"></span>
+            <br>
+            <input type="checkbox" name="show-password" id="show-password">
+            <label for="show-password">Show Password</label>
+        </fieldset>
+    </form>
+    <br>
+    <div id="result-display">
+        <label for="password-strength-bar">Password Strength</label>
+        <progress id="password-strength-bar" value="0" max="4"></progress>
+        <span id="password-strength-text"></span>
+        <br>
+        <div id="extra-result">
+            <label for="improvement-tip">Here's what you can do to improve your password:</label>
+            <br>
+            <textarea name="improvement-tip" id="improvement-tip" cols="70" rows="6" readonly></textarea>
+        </div>
+    </div>
+
+    <!-- Load custom JS -->
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

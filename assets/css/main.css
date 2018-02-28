@@ -1,0 +1,37 @@
+body {
+    padding-left: 10px;
+    width: 50%;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    body {
+        width: 90%;
+    }
+}
+a {
+    text-decoration: none;
+    color: initial;
+}
+
+#main-form > * {
+    margin: 5px 0;
+}
+
+#no-password-alert {
+    color: red;
+}
+
+#extra-result {
+    margin-top: 10px;
+    display: none;
+}
+
+#improvement-tip {
+    padding: 5px;
+}
