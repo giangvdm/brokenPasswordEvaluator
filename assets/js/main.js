@@ -159,12 +159,19 @@ var App = {
     }
 }
 
+// Show password checkbox
 document.querySelector("#show-password").addEventListener("click", function () {
     App.showPassword();
 });
 
+// Submit button
 document.querySelector("#password-submit").addEventListener("click", function () {
     results = App.evaluatePassword();
     App.displayResult(results);
     App.displayExtra(results);
+});
+
+// Reset password input also
+document.querySelector("#main-form input[type='reset']").addEventListener("click", function () {
+    App.passwordInput.type = "password";
 });
